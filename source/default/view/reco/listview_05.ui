@@ -1,0 +1,19 @@
+{
+	"RootView":{
+		"bgColor":"FFFFFFFF",
+		"width":"460",
+		"x":"10",
+		"y":"10",
+		"id":"ALayout_1",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"width":"460",
+				"id":"do_ImageView_1",
+				"type":"do_ImageView",
+				"height":"230"
+			}
+		],
+		"height":"240"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"RootView":{
+		"bgColor":"FFFFFFFF",
+		"width":"480",
+		"id":"ALayout_1",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"isHeaderVisible":"true",
+				"templates":"source://view/reco/slide_index.ui,source://view/reco/listview_01.ui,source://view/reco/listview_02.ui,source://view/reco/listview_03.ui,source://view/reco/listview_04.ui,source://view/reco/listview_05.ui",
+				"width":"480",
+				"id":"mylistview",
+				"type":"do_ListView",
+				"height":"695"
+			}
+		],
+		"height":"854"
+	}
+}

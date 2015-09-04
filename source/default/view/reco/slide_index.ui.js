@@ -27,12 +27,12 @@ listdata.addData([
 ]);
 
 myslide.refreshItems();
-
+myslide.set({index: 0});
 timer01 = mm("do_Timer");
 timer01.delay = 0;
-timer01.interval = 4000;
+timer01.interval = 3000;
 
-var i = 0;
+var i = 1;
 
 timer01.on("tick", function(){
     if(i >= 5){

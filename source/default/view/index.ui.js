@@ -57,24 +57,89 @@ listdata.addData([
 
 myslideview.refreshItems();
 
+var play=ui("play");
+var alllist=ui("alllist");
+
+play.on("touch", function(){
+	
+});
+
+
+alllist.on("touch", function(){
+	nf.alert("你点击了播放列表！");
+});
+
+
+
+
 var list=ui("list");
 list.on("touch", function(){
 	nf.alert("你点击了侧边栏！");
 });
 
 var music=ui("music");
-music.on("touch", function(){
-	nf.alert("你点击了当前播放音乐！");
-});
-var play=ui("play");
-play.on("touch", function(){
-	nf.alert("你点击了播放按钮！");
-});
+
+
 var next=ui("next");
-next.on("touch", function(){
-	nf.alert("你点击了下一首按钮！");
+
+
+var i=1;
+/*********************************/
+
+var mu = sm("do_Audio");
+var status=true;
+var j=1;
+var k=1;
+play.on("touch",function(data, e){
+	if (status==true)
+	{
+		if(k==1){
+			music.source="source://res/love.png";
+		}else if(k==2){
+			music.source="source://res/nanshannan.png";
+		}else if(k==3){
+			music.source="source://res/nolove.png";
+		}
+		play.source="source://image/pause.png";
+		if(j==1){
+			mu.play({path:"source://res/love.mp3", point:0});
+			j++;
+		}else{
+			mu.resume();
+		}
+		status=false;
+	}
+	else
+	{
+		music.source="source://image/music_index.png";
+		play.source="source://image//mysonglist_play.png";
+		mu.pause({});
+		status=true;
+	}
 });
-var alllist=ui("alllist");
-alllist.on("touch", function(){
-	nf.alert("你点击了播放列表！");
+
+next.on("touch",function(data, e){
+	if(i==1){
+		k=1;
+		mu.stop();
+		mu.play({path:"source://res/love.mp3", point:0});
+		music.source="source://res/love.png";
+	}else if(i==2){
+		k=2;
+		mu.stop();
+		mu.play({path:"source://res/nanshannan.mp3", point:0});
+		music.source="source://res/nanshannan.png";
+	}else if(i==3){
+		k=3;
+		mu.stop();
+		mu.play({path:"source://res/nolove.mp3", point:0});
+		music.source="source://res/nolove.png";
+	}
+	i++;
+	if(i==4){
+		i=1;
+	}
 });
+
+
+

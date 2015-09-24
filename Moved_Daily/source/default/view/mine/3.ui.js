@@ -16,10 +16,12 @@ var login0=ui("login0");
 login0.on("touch", function(){
 	nf.alert("你点击了登陆/注册！");
 });
+
 var login1=ui("login1");
 login1.on("touch", function(){
 	nf.alert("你点击了登陆/注册！");
 });
+
 var wifi=ui("wifi");
 wifi.on("touch", function(){
 	nf.alert("你点击了wifi！");

@@ -143,3 +143,4 @@ next.on("touch",function(data, e){
 
 
 
+

@@ -23,6 +23,7 @@ storage.readFile("data://LVdata.json", function(data){// 读取文件
 
 mylistview.on("pull", function(data) {
     /**
+     * 下拉刷新事件
      * @此事件将会多次执行.
      * @state == 0 : pull动作开始
      * @state == 1 : pull动作持续中

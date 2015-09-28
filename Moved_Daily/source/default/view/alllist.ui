@@ -21,7 +21,7 @@
 				"views":[
 					{
 						"width":"96",
-						"id":"do_ImageView_1",
+						"id":"mode",
 						"source":"source://image/cycle.png",
 						"type":"do_ImageView",
 						"enabled":"true",
@@ -30,34 +30,38 @@
 					{
 						"x":"96",
 						"width":"96",
-						"id":"do_ImageView_2",
+						"id":"last",
 						"source":"source://image/lastsong.png",
 						"type":"do_ImageView",
+						"enabled":"true",
 						"height":"94"
 					},
 					{
 						"x":"192",
 						"width":"96",
-						"id":"do_ImageView_3",
+						"id":"play",
 						"source":"source://image/play.png",
 						"type":"do_ImageView",
+						"enabled":"true",
 						"height":"94"
 					},
 					{
 						"x":"288",
 						"width":"96",
-						"id":"do_ImageView_4",
+						"id":"next",
 						"source":"source://image/nextsong.png",
 						"type":"do_ImageView",
+						"enabled":"true",
 						"height":"94"
 					},
 					{
 						"x":"399",
 						"width":"70",
 						"y":"11",
-						"id":"do_ImageView_5",
+						"id":"myclose",
 						"source":"source://image/close.png",
 						"type":"do_ImageView",
+						"enabled":"true",
 						"height":"72"
 					}
 				],

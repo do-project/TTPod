@@ -8,7 +8,6 @@ rootview = ui("$");
 page = sm("do_Page");
 
 rootview.setMapping({
-    "do_ImageView_1.source" : "img",
     "do_Label_1.source" : "label1",
     "do_Label_2.source" : "label2"
 });

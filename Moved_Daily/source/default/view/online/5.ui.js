@@ -29,8 +29,25 @@ listdata.addData(datas);
 mygrid.refreshItems();
 
 mygrid.on("touch",function(data, e){                       //griview点击事件
-	var img1 = datas[data].img ;
-	imageBrowser.show([
-		{ source :img1 , init :img1 }
-	], 0);
+	//var img1 = datas[data].img ;
+	//imageBrowser.show([
+	//	{ source :img1 , init :img1 }
+	//], 0);
+	if(data==0){
+		app.openPage("source://view/online/grid_0.ui");
+	}else if(data==1){
+		app.openPage("source://view/online/grid_1.ui");
+	}else if(data==2){
+		app.openPage("source://view/online/grid_2.ui");
+	}else if(data==3){
+		app.openPage("source://view/online/grid_3.ui");
+	}else if(data==4){
+		app.openPage("source://view/online/grid_4.ui");
+	}else if(data==5){
+		app.openPage("source://view/online/grid_5.ui");
+	}else if(data==6){
+		app.openPage("source://view/online/grid_6.ui");
+	}else if(data==7){
+		app.openPage("source://view/online/grid_7.ui");
+	}
 });

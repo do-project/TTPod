@@ -14,7 +14,7 @@ var mylabel = ui("do_Label_1");
 
 var mylistview = ui("mylistview");
 var listdata = mm("do_ListData");
-
+var mu = sm("do_Audio");
 mylistview.bindItems(listdata);// 建立ListView 与 ListData 的行数据关系;
 
 storage.readFile("data://alllist.json", function(data){// 读取文件
@@ -25,12 +25,18 @@ storage.readFile("data://alllist.json", function(data){// 读取文件
 
 mylistview.on("touch",function(data, e){
 	nf.alert("点击了第"+data+"个listview");
-	if(data==1){
+	if(data==0){
 		mylabel.text="      Now Playing: 南山南";
-	}else if (data==2){
+		mu.stop();
+		mu.play({path:"source://res/nanshannan.mp3", point:0});
+	}else if (data==1){
 		mylabel.text="      Now Playing: 遇见你的时候所有星星都落到我头上";
-	}else if(data==3){
+		mu.stop();
+		mu.play({path:"source://res/love.mp3", point:0});
+	}else if(data==2){
 		mylabel.text="      Now Playing: 如果这都不算爱";
+		mu.stop();
+		mu.play({path:"source://res/nolove.mp3", point:0});
 	}
 });
 
@@ -38,7 +44,7 @@ mylistview.on("touch",function(data, e){
 var next=ui("next");
 var i=1;
 var last=ui("last");
-var mu = sm("do_Audio");
+
 var status=true;
 var j=1;
 var k=1;

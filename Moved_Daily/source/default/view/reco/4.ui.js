@@ -35,4 +35,7 @@ mylistview.on("pull", function(data) {
 
 mylistview.on("touch",function(data, e){
 	nf.alert("点击了第"+data+"个listview");
+	//var data = listdata.getOne(index);
+	//app.openPage("source://view/indexC.ui", data);
 });
+

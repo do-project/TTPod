@@ -28,6 +28,11 @@ listdata.addData([
 
 myslide.refreshItems();
 myslide.set({index: 0});
+
+myslide.on("touch",function(data, e){
+	nf.alert("点击了第"+data+"个myslide");
+});
+
 timer01 = mm("do_Timer");
 timer01.delay = 0;
 timer01.interval = 3000;

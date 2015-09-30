@@ -5,8 +5,8 @@ nf = sm("do_Notification");
 app = sm("do_App");
 page = sm("do_Page");
 
-page.on("back", function(){ app.closePage() });
-ui("fanhui").on("touch", function(){ app.closePage() });
+page.on("back", function(){ app.closePage(); });
+ui("fanhui").on("touch", function(){ app.closePage(); });
 
 var myslideview =ui("myslideview");
 var lb_list = [ui("lb_0"),ui("lb_1"),ui("lb_2")];
@@ -123,4 +123,10 @@ next.on("touch",function(data, e){
 	if(i==4){
 		i=1;
 	}
+});
+
+var write=ui("write");
+
+write.on("touch", function(){ 
+	nf.alert("write");
 });

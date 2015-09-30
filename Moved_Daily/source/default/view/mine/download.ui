@@ -34,7 +34,7 @@
 						"x":"413",
 						"width":"50",
 						"y":"15",
-						"id":"do_ImageView_2",
+						"id":"write",
 						"source":"source://image/3/down.png",
 						"type":"do_ImageView",
 						"enabled":"true",

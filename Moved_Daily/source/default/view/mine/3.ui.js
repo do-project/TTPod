@@ -10,21 +10,18 @@ page.on("back", function(){ app.closePage() });
 
 var pic=ui("pic");
 pic.on("touch", function(){
-	nf.alert("你点击了头像！");
-});
-var login0=ui("login0");
-login0.on("touch", function(){
-	nf.alert("你点击了登陆/注册！");
+	app.openPage("source://view/mine/login.ui");
 });
 
 var login1=ui("login1");
 login1.on("touch", function(){
-	nf.alert("你点击了登陆/注册！");
+	app.openPage("source://view/mine/login.ui");
 });
-
+int k=0;
 var wifi=ui("wifi");
 wifi.on("touch", function(){
-	nf.alert("你点击了wifi！");
+	if(k==0){nf.toast("Only on Wi-Fi");k=1;}
+	if(k==1){nf.toast("Use cellular");k=0;}
 });
 var localmusic0=ui("localmusic0");
 localmusic0.on("touch", function(){

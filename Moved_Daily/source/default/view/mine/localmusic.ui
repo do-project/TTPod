@@ -25,9 +25,19 @@
 						"width":"169",
 						"fontSize":"30",
 						"id":"do_Label_1",
-						"text":"Login Music",
+						"text":"Local Music",
 						"type":"do_Label",
 						"height":"70"
+					},
+					{
+						"x":"413",
+						"width":"50",
+						"y":"25",
+						"id":"dian",
+						"source":"source://image/3/dian.png",
+						"type":"do_ImageView",
+						"enabled":"true",
+						"height":"20"
 					}
 				],
 				"height":"70"

@@ -66,7 +66,7 @@ play.on("touch", function(){
 
 
 alllist.on("touch", function(){
-	nf.alert("你点击了播放列表！");
+	app.openPage("source://view/alllist.ui");
 });
 
 
